@@ -42,6 +42,7 @@
   ```
     git clone https://github.com/confessqtore/password-manager.git
     cd password-manager
+    chmod +x setup
     ./setup
   ```
 
