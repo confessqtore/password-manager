@@ -1,9 +1,9 @@
 # **Password Manager**
+## Un gestore password sicuro da linea di comando
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Encryption](https://img.shields.io/badge/Encryption-libsodium-red)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey)
-## Un gestore password sicuro da linea di comando
 ### Caratteristiche:
   - Interfaccia interattiva da terminale
   - Crittografia con libsodium
