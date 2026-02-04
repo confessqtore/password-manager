@@ -53,9 +53,9 @@
   Una volta eseguito il file ./setup per avviare il Password Manager basterà digitare il comando ./passwordManager.
 
 ### Note:
-  - Non ti dimenticare la password che inserisci - senza di quella no potrai accedere e di conseguenza recuperare i tuoi dati
-  - Le informazioni sulle password sono salvate in locale nei corrispettivi file:
+  - Non ti dimenticare la password che inserisci - senza di quella non potrai accedere e di conseguenza recuperare i tuoi dati
+  - Le informazioni sulle password sono salvate in locale nei corrispettivi file cifrati:
     - nomi.txt
     - pass.bin
     - passwordUtente.bin
-## Enjoy!
+## Enjoy! ☺️
