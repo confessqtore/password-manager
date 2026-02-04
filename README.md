@@ -1,5 +1,5 @@
 # **Password Manager**
-## Un gestore password sicuro da linea di comando
+## Un gestore di password sicuro da linea di comando
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Encryption](https://img.shields.io/badge/Encryption-libsodium-red)
