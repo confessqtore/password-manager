@@ -9,7 +9,6 @@
   - Crittografia con libsodium
   - Password memorizzate su file binari crittografati
   - Archiviazione in locale
-### Download/Installazione
 ### Requisiti:
   - Installare libsodium
   - Installare lncurses
