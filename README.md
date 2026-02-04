@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Encryption](https://img.shields.io/badge/Encryption-libsodium-red)
-![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey)
+![Platform](https://img.shields.io/badge/Platform-Linux%20-lightgrey)
 ### Caratteristiche:
   - Interfaccia interattiva da terminale
   - Crittografia con libsodium
@@ -12,29 +12,28 @@
 ### Requisiti:
   - Installare libsodium
   - Installare lncurses
+  - Installare xclip
 
     **Debian/Ubuntu**: 
 
     ```
+    sudo apt update
+    sudo apt install xclip
     sudo apt-get install libsodium-dev libncurses5-dev libncursesw5-dev
     ```
 
     **Fedora/RHEL**: 
 
     ```
+    sudo dnf install xclip
     sudo dnf install libsodium-devel ncurses-devel
     ```
 
     **Arch Linux**: 
 
     ```
+    sudo pacman -S xclip
     sudo pacman -S libsodium ncurses
-    ```
-
-    **MacOs(con HomeBrew)**: 
-
-    ```
-    brew install libsodium ncurses
     ```
 
 ### Installazione: 
@@ -58,4 +57,5 @@
     - nomi.txt
     - pass.bin
     - passwordUtente.bin
+  - La funzione copia non potrebbe funzionare correttamente se si usa Wayland
 ## Enjoy! ☺️
