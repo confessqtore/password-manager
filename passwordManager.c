@@ -197,9 +197,25 @@ void visualizzaPassword(){
             printw("Nome: %s",arr[scelta-1].nome);
             printw(" - Password: %s\n", arr[scelta-1].password);
 
-            printw("Premi Invio per tornare indietro\n");
+            printw("\n[C] Copia password   [Invio] Indietro\n");
             refresh();
-            while(getch() != '\n');
+
+            int ch;
+            while ((ch = getch())) {
+                if (ch == '\n') break;
+
+                if (ch == 'c' || ch == 'C') {
+                    char cmd[512];
+                    snprintf(cmd, sizeof(cmd),
+                            "printf '%%s' \"%s\" | xclip -selection clipboard",
+                            arr[scelta-1].password);
+                    system(cmd);
+
+                    printw("\nPassword copiata! Premi [Invio] per tornare indietro..");
+                    refresh();
+                }
+            }
+
         }
     }
     endwin();
