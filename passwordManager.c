@@ -517,6 +517,21 @@ void eliminaPassword(){
 }
 
 void reset(){
+    char scelta[100];
+    int l;
+    do{
+        printf("Sei sicuro? Si[s] - No[n]\n> ");
+        fgets(scelta,sizeof(scelta),stdin);
+        l=strlen(scelta);
+        if (l > 0 && scelta[l-1] == '\n') {
+        scelta[l-1] = '\0';
+        l--;
+    }
+    }while(l!=1 || scelta[0]!='s' && scelta[0]!='S' && scelta[0]!='n' && scelta[0]!='N');
+
+    if(scelta[0]=='n' || scelta[0]=='N'){
+        return;
+    }
     FILE *fileUtente=fopen("passwordUtente.bin","wb");
     if(!fileUtente){
         printf("Impossibile aprire il file\n");
